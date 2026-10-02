@@ -255,4 +255,4 @@ The job runner is an in-process asyncio task behind a small `JobStore`/`JobRunne
 
 ## License
 
-MIT. See `LICENSE`.
+All rights reserved. Shared for demonstration and portfolio purposes only; see `LICENSE`.
