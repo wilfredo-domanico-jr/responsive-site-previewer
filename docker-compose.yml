@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      SCREENSHOT_DIR: /app/screenshots
+      CORS_ORIGINS: http://localhost:3000
+      MAX_CONCURRENT_JOBS: "2"
+    volumes:
+      - ./backend/screenshots:/app/screenshots
+    # Chromium needs a bit more shared memory than Docker's 64 MB default.
+    shm_size: "1gb"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      # The browser talks to the backend directly, so this must be reachable from the host.
+      NUXT_PUBLIC_API_BASE: http://localhost:8000
+    depends_on:
+      backend:
+        condition: service_healthy
