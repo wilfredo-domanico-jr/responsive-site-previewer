@@ -1,0 +1,33 @@
+# Node / Nuxt
+node_modules/
+.nuxt/
+.output/
+.nitro/
+.cache/
+dist/
+*.log
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Generated screenshots (keep the folder)
+backend/screenshots/*
+!backend/screenshots/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local AI assistant config
+CLAUDE.md

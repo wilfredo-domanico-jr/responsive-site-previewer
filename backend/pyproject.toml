@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+filterwarnings = [
+  "error::DeprecationWarning:app.*",
+  "ignore:Using `httpx` with `starlette.testclient` is deprecated:DeprecationWarning",
+]
