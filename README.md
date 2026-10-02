@@ -2,6 +2,21 @@
 
 Enter a public website address and get full-page screenshots of it at four device sizes: desktop, laptop, tablet and mobile. The previews appear in a dashboard as they are captured, can be viewed as a size-proportional grid or one large image at a time, and each one can be downloaded as a PNG.
 
+## Demo
+
+![Grid view showing nuxt.com captured at desktop, laptop, tablet and mobile sizes](docs/demo/hero.png)
+
+![Walkthrough: entering a URL, watching each device capture in turn, then switching to the large view](docs/demo/demo.gif)
+
+| | |
+|---|---|
+| ![Live progress while capturing](docs/demo/progress.png) | ![Large view of the mobile capture](docs/demo/large-view.png) |
+| Status and previews update as each device finishes. | Large view with per-device tabs and download. |
+| ![Friendly error for an SSL failure](docs/demo/error.png) | ![Dark mode grid view](docs/demo/hero-dark.png) |
+| Failures become plain-language messages, never stack traces. | Light and dark themes follow the system setting. |
+
+The app itself is responsive too: [phone layout](docs/demo/phone.png).
+
 ## Features
 
 - Captures any publicly reachable `http://` or `https://` URL at exactly 1920×1080, 1440×900, 768×1024 and 390×844.
