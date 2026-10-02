@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="9 13 47 37" fill="none" stroke="#1f3dff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- monitor -->
+  <rect x="15" y="15.5" width="38" height="26.5" rx="2.6" />
+  <path d="M40.4 42v5.3M35 47.3h11" />
+  <!-- tablet -->
+  <rect x="15" y="24" width="18.7" height="23.3" rx="2.5" />
+  <path d="M25.6 44.7h3.4" />
+  <!-- phone -->
+  <rect x="11.3" y="29.8" width="10.8" height="17.5" rx="2.3" />
+  <path d="M15 44.9h3.4" />
+</svg>

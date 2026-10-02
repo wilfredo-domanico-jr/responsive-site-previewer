@@ -36,13 +36,7 @@ watch(hasPreviews, (ready) => {
   <div class="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 pb-16 pt-6 sm:px-6 sm:pt-8 lg:gap-14">
     <header class="flex items-center justify-between">
       <NuxtLink to="/" class="flex items-center gap-2.5 text-ink">
-        <span class="grid size-8 place-items-center rounded-lg bg-accent text-accent-ink" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-4.5">
-            <rect x="3" y="4" width="11" height="9" rx="1.5" />
-            <rect x="15.5" y="9" width="5.5" height="11" rx="1.5" />
-            <path d="M6 17h5" stroke-linecap="round" />
-          </svg>
-        </span>
+        <AppLogo class="h-7 w-auto text-accent" />
         <span class="text-base font-semibold tracking-tight">Responsive Site Previewer</span>
       </NuxtLink>
       <span class="hidden text-sm text-ink-3 sm:inline">Four viewports, one pass</span>
